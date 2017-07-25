@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>DSP首页</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<style type="text/css">
+			.active {
+				color: yellow;
+			}
+			
+			#show>div {
+				display: none;
+				color: #FFFFFF;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="outer clearfix">
+			<!--左侧栏 start-->
+			<div class="leftPart fl">
+				<img src="img/index-sangang.png" />
+				<img id="shape" src="img/index-shape.png" />
+				<!--<div class="lp"></div>-->
+			</div>
+			<!--左侧栏 end-->
+
+			<!--右侧部分 start-->
+			<div id="ff" class="rightPart fr">
+				<div class="rpHeade">
+					<span>51DSP.cn</span>
+				</div>
+				<!--导航图 start-->
+				<div class="banner1">
+					<img class="banner1_img" src="img/index-banner1.png" />
+					<!--蒙层-->
+					<div class="mark clearfix">
+						<div class="mark_left fl"></div>
+						<div class="mark_right fr"></div>
+					</div>
+					<!--蒙层区导航条 start-->
+					<div id="banner1_mark" class="clearfix">
+						<div class="navL">
+							<img src="img/index-logo.png" />
+							<span id="index_time">2017年6月27日</span>
+							<img src="img/time.png" />
+						</div>
+						<!--导航条 start-->
+						<ul id="navR" class="fr">
+							<li class="index"></li>
+							<li><span>51DSP介绍</span></li>
+							<li><span>视频广告</span></li>
+							<li><span>移动端广告</span></li>
+							<li><span>外包项目</span></li>
+							<li><span>关于我们</span></li>
+							<li><span>联系方式</span></li>
+						</ul>
+						<!--导航条 end-->
+					</div>
+					<!--蒙层区导航条 end-->
+				</div>
+				<!--导航图 end-->
+				<!--切换区 start-->
+				<div id="show">
+					<!--首页 start-->
+					<div style="display: block;" id="index">
+						<!--51DSP介绍 start-->
+						<div class="banner2">
+							<a id="viewDetails" href="#">查看详情</a>
+						</div>
+						<!--51DSP介绍 end-->
+						<!--51DSP案例 start-->
+						<div class="banner3"></div>
+						<!--51DSP案例 end-->
+						<!--视频广告 start-->
+						<div class="banner4"></div>
+						<!--视频广告 end-->
+						<!--移动端广告 start-->
+						<div class="banner5"></div>
+						<!--移动端广告 end-->
+						<!--关于我们 start-->
+						<div class="banner6"></div>
+						<!--关于我们 end-->
+						<!--广告咨询 start-->
+						<div class="banner7">
+							<a href="#" id="contactUS">立即留言</a>
+						</div>
+						<!--广告咨询 end-->
+					</div>
+					<!--首页 end-->
+
+					<!--二级页面 DSP介绍 start-->
+					<div id="introduce">
+						<div class="introduce_banner1"></div>
+						<div>
+							<!--<div class="text">51DSP 如何定向精准用户</div>-->
+							<div class="introduce_banner2"></div>
+						</div>
+						<div class="introduce_banner3"></div>
+					</div>
+					<!--二级页面 DSP介绍 end-->
+					
+					<div id="introduce">
+						<div class="introduce_banner1"></div>
+						<div>
+							<!--<div class="text">51DSP 如何定向精准用户</div>-->
+							<div class="introduce_banner2"></div>
+						</div>
+						<div class="introduce_banner3"></div>
+					</div>
+					<div id="introduce">
+						<div class="introduce_banner1"></div>
+						<div>
+							<!--<div class="text">51DSP 如何定向精准用户</div>-->
+							<div class="introduce_banner2"></div>
+						</div>
+						<div class="introduce_banner3"></div>
+					</div>
+					<div id="introduce">
+						<div class="introduce_banner1"></div>
+						<div>
+							<!--<div class="text">51DSP 如何定向精准用户</div>-->
+							<div class="introduce_banner2"></div>
+						</div>
+						<div class="introduce_banner3"></div>
+					</div>
+					<div id="introduce">
+						<div class="introduce_banner1"></div>
+						<div>
+							<!--<div class="text">51DSP 如何定向精准用户</div>-->
+							<div class="introduce_banner2"></div>
+						</div>
+						<div class="introduce_banner3"></div>
+					</div>
+
+					<!--二级页面 视频广告 start-->
+					<!--<div id="video">
+						视频广告
+					</div>-->
+					<!--二级页面 视频广告 end-->
+
+					<!--二级页面 移动端广告 start-->
+					<!--<div id="mobile">
+						移动端广告
+					</div>-->
+					<!--二级页面 移动端广告 end-->
+
+					<!--二级页面 外包项目 start-->
+					<!--<div id="business">
+						外包项目
+					</div>-->
+					<!--二级页面 外包项目 end-->
+
+					<!--二级页面 联系我们 start-->
+					<!--<div id="contact">
+						联系我们
+					</div>-->
+					<!--二级页面 联系我们 end-->
+				</div>
+
+				<!--切换区 end-->
+
+				<!--尾部 start-->
+				<div class="footer">
+					<span style="margin-top: 27px;">京ICP备09083201号 京ICP证070419号  京公网安备:11010502026763</span><br />
+					<span>Copyright©2015 51dsp.com All Rights Reserved</span>
+				</div>
+				<!--尾部 end-->
+			</div>
+			<!--右侧部分 end-->
+		</div>
+		<script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript">
+			$("#ff #navR li").click(function() {
+				$(this).addClass("active").siblings().removeClass("active");
+				$("#ff").find("#show>div").eq($(this).index()).show().siblings().hide();
+			});
+			var date = new Date();
+			var time = document.getElementById('index_time');
+			setInterval(function() {
+				time.innerHTML = " " + date.getFullYear() + " " + "年" + " " + (date.getMonth() + 1) + " " + "月" + " " + date.getDate() + " " + "日";
+			}, 1000);
+			
+			$("#viewDetails").click(function(){
+				$("#navR>li").eq(1).addClass("active").siblings().removeClass("active");
+				$("#show>div").eq(1).show().siblings().hide();
+			});
+		</script>
+	</body>
+
+</html>

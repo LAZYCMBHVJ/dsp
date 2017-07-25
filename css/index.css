@@ -1,0 +1,249 @@
+html,body{
+	height: 100%;
+}
+.outer{
+	width: 1920px;
+	/*height: 100%;*/
+	background-color: #051623;
+	overflow-x: hidden;
+}
+/*左侧部分 start*/
+.leftPart{
+	width: 103px;
+	height: 900px;
+	background-color: #051623;
+	position: relative;
+	z-index: 1;
+}
+.shape{
+	width: 65px;
+	height: 65px;
+	background-color: #fffc01;
+	margin: 49px 19px auto ;
+	position: relative;
+}
+#shape{
+	margin: 8px 25px 0 17px;
+}
+/*左侧部分 end*/
+
+/*右侧部分 start*/
+.rightPart{
+	width: 1817px;
+}
+.rpHeade{
+	height: 57px;
+	background-color: #202329;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 57px;
+}
+.banner1{
+	height: 628px;
+	position: relative;
+}
+.banner1_img{
+	/*margin-left: -20px;*/
+	width: 1920px;
+	height: 628px;
+	position: absolute;
+	top: 0;
+	left: -103px;
+	z-index:initial
+}
+.mark,#banner1_mark{
+	width: 100%;
+	height: 67px;
+	color: #FFFFFF;
+	font-size: 14px;
+	position: absolute;
+	bottom: 0;
+}
+.mark_left,.mark_right{
+	height: 67px;
+	background-color: #bc4359;
+}
+.mark_left{
+	width:952px;
+	opacity: 0.9;
+}
+.mark_right{
+	width: 865px;
+	opacity: 0.5;
+}
+.navL{
+	width:952px;
+}
+#banner1_mark img{
+	vertical-align: middle;
+}
+#banner1_mark span{
+	margin: 0 19px 0 10px;
+}
+/*导航条 start*/
+#navR{
+	display: inline-block;
+	width: 865px;
+	height: 67px;
+	line-height: 67px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+#navR li{
+	display: inline-block;
+	float: left;
+	width:144px;
+	box-sizing: border-box;
+	border-left: 1px solid #c43d54;
+	border-right: 1px solid #c43d54;
+	cursor: pointer;
+}
+#navR li span{
+	margin-left: 40px;
+	/*margin-right: 40px;*/
+}
+#navR .index{
+	width: 102px;
+	height: 67px;
+	position: absolute;
+	top: 0;
+	left: -952px;
+	border: none;
+	/*background-color: #000000;*/
+}
+/*导航条 end*/
+/*切换部分 start*/
+/*首页 start*/
+/*51DSP介绍 start*/
+.banner2{
+	width: 100%;
+	height: 517px;
+	background: #FFFFFF url(../img/banner2.png) center center no-repeat;
+	position: relative;
+}
+#viewDetails{
+	display: inline-block;
+	/*background-color: #000000;*/
+	width: 150px;
+	height: 45px;
+	background-color: #e94b59;
+	position: absolute;
+	left: 856px;
+	top: 251px;
+	line-height: 45px;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 20px;
+}
+/*51DSP介绍 end*/
+/*51DSP案例 start*/
+.banner3{
+	width: 1817px;
+	height: 633px;
+	background: url(../img/banner3.png) center center no-repeat;
+}
+/*51DSP案例 end*/
+/*视频广告 start*/
+.banner4{
+	width: 1817px;
+	height: 589px;
+	background: #FFFFFF url(../img/banner4.png) center center no-repeat;
+}
+/*视频广告 end*/
+/*移动端广告 start*/
+.banner5{
+	width: 1817px;
+	height: 633px;
+	background: #FFFFFF url(../img/banner5.png) center center no-repeat;
+}
+/*移动端广告 end*/
+/*关于我们 start*/
+.banner6{
+	width: 1817px;
+	height: 557px;
+	background: #FFFFFF url(../img/banner6.png) center 25px no-repeat;
+	/*padding-top: 20px;*/
+}
+/*关于我们 end*/
+/*广告咨询 start*/
+.banner7{
+	width: 1817px;
+	height: 582px;
+	background: #FFFFFF url(../img/banner7.png) center center no-repeat;
+	position: relative;
+}
+#contactUS{
+	display: inline-block;
+	width: 170px;
+	height: 35px;
+	color: #FFFFFF;
+	font-size: 20px;
+	line-height: 35px;
+	text-align: center;
+	position: absolute;
+	left: 940px;
+	top: 439px;
+}
+/*广告咨询 end*/
+/*首页 end*/
+/*二级页面 DSP介绍 start*/
+.introduce_banner1{
+	width: 1817px;
+	height: 753px;
+	background: #FFFFFF  url(../img/introduce_banner1.png) center bottom no-repeat;
+}
+.text{
+	height: 79px;
+	background-color: #fff;
+	font-size: 30px;
+	font-family: "微软雅黑";
+	color: #e94b59;
+	line-height: 79px;
+	text-align: center;
+}
+.introduce_banner2{
+	width: 1817px;
+	height: 2547px;
+	background: #FFFFFF  url(../img/introduce_banner21.png) center bottom no-repeat;
+}
+.introduce_banner3{
+	width: 1817px;
+	height: 1653px;
+	background: #FFFFFF  url(../img/introduce_banner31.png) center center no-repeat;
+	margin-bottom: -83px;
+}
+
+/*二级页面 DSP介绍 end*/
+/*切换部分 end*/
+/*尾部 start*/
+.footer{
+	height: 83px;
+	background: #ba0013;
+	/*line-height: 83px;*/
+	text-align: center;
+	color: #000000;
+	font-size: 12px;
+	font-family: "微软雅黑";
+}
+.footer span{
+	line-height: 12px;
+	display: inline-block;
+}
+/*尾部 end*/
+/*右侧部分 end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
